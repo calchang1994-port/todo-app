@@ -29,15 +29,9 @@ Tasks are saved in your browser using `localStorage`.
 ---
 
 ## 📸 Preview
-*(Add a screenshot here once deployed)*
+
+![To-Do App Screenshot](screenshot.png)
 
 ---
 
 ## 📂 Project Structure
-```
-todo-app/
- ├── index.html
- ├── style.css
- ├── script.js
- └── README.md
-```
