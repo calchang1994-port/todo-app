@@ -1,0 +1,123 @@
+/* Default: Dark Mode */
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-color: #1e1e1e;
+  --accent-color: #4cafef;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-color: #f4f4f4;
+  --accent-color: #1976d2;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#theme-toggle {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--accent-color);
+  color: white;
+  transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+  opacity: 0.9;
+}
+
+.todo-input {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  background: var(--card-color);
+  color: var(--text-color);
+}
+
+#add-task {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--accent-color);
+  color: white;
+  transition: background 0.3s;
+}
+
+#add-task:hover {
+  opacity: 0.9;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-color);
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  transition: transform 0.2s;
+}
+
+.task-actions button:hover {
+  transform: scale(1.2);
+}
